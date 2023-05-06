@@ -1,4 +1,4 @@
-# Github_workflow
+# Github_workflow explaining workflow_dispatch
 
 curl command to trigger workflow dispatch
 
