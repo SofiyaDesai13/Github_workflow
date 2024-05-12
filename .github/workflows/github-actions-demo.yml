@@ -30,4 +30,5 @@ jobs:
       
       - name: running your own scripts
         run: |
+          chmod +x Test/shellTest.sh
           ./Test/shellTest.sh
