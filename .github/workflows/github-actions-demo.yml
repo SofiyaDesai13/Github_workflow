@@ -41,7 +41,6 @@ jobs:
 
       - name: Install dependencies
         run: |
-          npm install
           pip3 install pyyaml boto3 gitpython
 
       - run: echo "🍏 This job's status is ${{ job.status }}."
