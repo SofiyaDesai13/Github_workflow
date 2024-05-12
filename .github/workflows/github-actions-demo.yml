@@ -33,9 +33,15 @@ jobs:
           chmod +x Test/shellTest.sh
           ./Test/shellTest.sh
 
+  Second-Job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v4
+
       - name: Create Pull Request
         id: cpr
-        uses: peter-evans/create-pull-request@v5
+        uses: peter-evans/create-pull-request@v6
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: Concepts and Tools presentation
