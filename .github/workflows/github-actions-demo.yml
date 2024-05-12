@@ -18,6 +18,16 @@ jobs:
           ls ${{ github.workspace }}
           echo "🍏 This job's status is ${{ job.status }}."
 
-      - name: Execute files inside repository
+      - name: Execute scripts from same repository
         run: |
           python3 pythonTest.py
+
+      - name: Checkout external repository
+        run: |
+          git clone https://$GITHUB_TOKEN@github.com/SofiyaDesai13/Test.git
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: running your own scripts
+        run: |
+          .Test/shellTest.sh
