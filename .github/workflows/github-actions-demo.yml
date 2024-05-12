@@ -20,4 +20,4 @@ jobs:
 
       - name: Execute files inside repository
         run: |
-          python3 Github_workflow/pythonTest.py
+          python3 pythonTest.py
