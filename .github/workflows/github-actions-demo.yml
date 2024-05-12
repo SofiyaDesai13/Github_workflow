@@ -30,4 +30,4 @@ jobs:
       
       - name: running your own scripts
         run: |
-          .Test/shellTest.sh
+          ./Test/shellTest.sh
