@@ -17,7 +17,7 @@ jobs:
         run: |
           ls ${{ github.workspace }}
 
-      - name: Execute scripts from same repository
+      - name: Execute scripts from same repositorys
         run: |
           python3 pythonTest.py
 
