@@ -3,7 +3,7 @@ run-name: ${{ github.actor }} is testing Concepts and Tools Demo
 #on: [push]
 on:
   schedule:
-    - cron: '20 8 * * *'
+    - cron: '22 8,20 * * *'
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
