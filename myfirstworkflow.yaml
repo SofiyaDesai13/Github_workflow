@@ -76,5 +76,3 @@
 #             echo "Pull request number - ${{ steps.cpr.outputs.pull-request-number }}"
 #             echo "Pull request url - ${{ steps.cpr.outputs.pull-request-url }}"
 #             gh pr merge "${{ steps.cpr.outputs.pull-request-number }}" --auto --squash
-        
- 
