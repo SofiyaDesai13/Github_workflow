@@ -34,7 +34,6 @@ jobs:
 
   Second-Job:
     runs-on: ubuntu-latest
-    needs: [Explore-GitHub-Actions]
     steps:
       - run: echo "🎉 The job was triggered from Second Job."
       - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
